@@ -1,0 +1,17 @@
+.buscar__caixa {
+    background: rgba(255,255,255, 0.16);
+    border: none;
+    border-radius: .5rem;
+    color: var(--white);
+    font: var(--inter-body);
+    padding: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.buscar__caixa:hover {
+    background: rgba(255,255,255, 0.24);
+}
+
+.buscar__caixa::placeholder {
+    color: rgba(255,255,255, 0.64);
+}
