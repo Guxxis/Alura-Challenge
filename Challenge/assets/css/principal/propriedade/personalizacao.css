@@ -1,0 +1,66 @@
+.personalizacao__titulo {
+    color: var(--white);
+    font: var(--inter-sidebar-title);
+    letter-spacing: .4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.personalizacao__campo--select {
+    background: rgba(255,255,255, 0.16);
+    border: none;
+    border-radius: 8px;
+    color: rgba(255,255,255, 0.64);
+    font: var(--inter-body);
+    margin-bottom: 1rem;
+    padding: 1.0625rem;
+    width: 100%;
+}
+
+.personalizacao__campo--select:last-child {
+    margin-bottom: 0px;
+}
+
+.personalizacao__campo--select:hover {
+    background: rgba(255,255,255, 0.24);
+}
+
+.personalizacao__campo--select option {
+    color: black;
+}
+
+.personalizacao__campo--cor {
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: .5rem;
+    padding: .25rem;
+    height: 2.875rem;
+    width: calc(100% - .5rem - 2px);
+}
+
+.personalizacao__campo--cor::-webkit-color-swatch {
+    border: none;
+	border-radius: .25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .personalizacao__campo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .personalizacao__campo--select {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .personalizacao__campo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalizacao__campo--select {
+        margin-right: 0rem;
+    }
+}

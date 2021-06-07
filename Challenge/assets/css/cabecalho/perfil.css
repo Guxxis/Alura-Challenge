@@ -1,0 +1,23 @@
+.perfil__link {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.perfil__link:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.perfil__imagem {
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+}
+
+.perfil__usuario {
+    color: var(--white);
+    font: var(--inter-body);
+    margin-left: .5rem;
+}

@@ -1,0 +1,48 @@
+.conteudo__caixa {
+    border-radius: .5rem;
+    margin-bottom: 40px;
+    padding: 2rem;
+}
+
+.caixa__editor {
+    background: var(--dark-gray);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.editor__circulo {
+    display: flex;
+}
+
+.editor__circulo--cor {
+    border-radius: 100%;
+    height: 12px;
+    margin-right: .5rem;
+    margin-bottom: 1.5rem;
+    width: 12px;
+}
+
+.editor__circulo--cor:nth-child(1) {
+    background: var(--mac-red);
+}
+
+.editor__circulo--cor:nth-child(2) {
+    background: var(--mac-yellow);
+}
+
+.editor__circulo--cor:nth-child(3) {
+    background: var(--mac-green);
+}
+
+.editor__codigo {
+    color: var(--white);
+    min-height: 10rem;
+}
+
+.editor__codigo code {
+    width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+    border: none;
+    outline: none;
+}

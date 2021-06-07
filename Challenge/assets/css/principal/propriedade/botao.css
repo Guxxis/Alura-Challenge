@@ -1,0 +1,23 @@
+.personalizacao__botao input {
+    background: var(--blue-300);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    font: var(--inter-body);
+    width: 100%;
+    outline: none;
+}
+
+.personalizacao__botao input:hover {
+    background: var(--blue-200);
+} 
+
+.personalizacao__botao input:active {
+    background: var(--blue-200);
+    border: 4px solid var(--blue-300);
+    padding: calc(1rem - 4px);
+}
+
+.personalizacao__botao input:focus {
+    background: var(--blue-100);
+}

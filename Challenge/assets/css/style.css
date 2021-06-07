@@ -1,0 +1,49 @@
+:root {
+    --dark-gray: #141414;
+    --white: #FFFFFF;
+
+    --mac-green: #27C93F;
+    --mac-red: #FF5F56;
+    --mac-yellow: #FFBD2E;
+
+    --blue-100: #96B9FD;
+    --blue-200: #7BA4FC;
+    --blue-300: #5081FB;
+    --dark-blue: #051D3B;
+
+    --blue-100-rgb: 150, 185, 253;
+    --blue-200-rgb: 123, 164, 252;
+    --blue-300-rgb: 80, 129, 251;
+    --dark-blue-rgb: 5, 29, 59;
+
+    --inter-title: normal normal 700 21px/31px 'inter', sans-serif;
+    --inter-body: normal normal 400 16px/24px 'inter', sans-serif;
+    --inter-sidebar-title: normal normal normal 12px/18px 'inter', sans-serif;
+}
+
+.app {
+    background: var(--dark-blue);
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "principal";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 2rem ;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+@media screen and (max-width: 375px) {
+    .app {
+        padding: 1rem;
+    }
+}
