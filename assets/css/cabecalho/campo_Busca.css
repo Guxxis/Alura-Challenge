@@ -6,6 +6,7 @@
     font: var(--inter-body);
     padding: 1rem;
     width: calc(100% - 2rem);
+    outline: none;
 }
 
 .buscar__caixa:hover {

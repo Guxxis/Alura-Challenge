@@ -1,4 +1,4 @@
-textarea {
+.projeto__campo textarea {
     min-height: 4rem;
     resize: vertical;
 }
@@ -20,6 +20,7 @@ textarea {
     margin-bottom: 1rem;
     padding: 1rem;
     width: calc(100% - 2rem);
+    outline: none;
 }
 
 .projeto__campo::placeholder {

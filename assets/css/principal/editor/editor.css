@@ -1,0 +1,4 @@
+.principal__conteudo {
+    display: flex;
+    flex-direction: column;
+}

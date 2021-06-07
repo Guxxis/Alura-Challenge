@@ -1,0 +1,17 @@
+.principal__propriedade {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template: auto auto auto / 1fr;
+}
+
+.propriedade__projeto {
+    grid-row: 1/1;
+}
+
+.propriedade__personalizacao {
+    grid-row: 2/3;
+}
+
+.propriedade__botao {
+    grid-row: 3/4;
+}

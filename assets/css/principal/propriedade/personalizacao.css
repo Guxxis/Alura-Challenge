@@ -38,14 +38,7 @@
     width: calc(100% - .5rem - 2px);
 }
 
-.personalizacao__campo--cor input[type=color]{
-	background: none;
-    border: none;
-    height: 2.5rem;
-	width: calc(100% - .4rem);
-}
-
-.personalizacao__campo--cor input[type="color"]::-webkit-color-swatch {
+.personalizacao__campo--cor::-webkit-color-swatch {
     border: none;
 	border-radius: .25rem;
 }

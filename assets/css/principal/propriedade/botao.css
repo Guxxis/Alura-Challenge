@@ -5,6 +5,7 @@
     padding: 1rem;
     font: var(--inter-body);
     width: 100%;
+    outline: none;
 }
 
 .personalizacao__botao input:hover {
