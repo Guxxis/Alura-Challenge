@@ -1,0 +1,42 @@
+.card__codigo {
+    background: var(--blue-100);
+    height: 288px;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.codigo__caixa {
+    display: flex;
+    height: calc(100% - 1rem);
+    flex-direction: column;
+    background: var(--dark-gray);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.caixa__circulo {
+    display: flex;
+}
+.caixa__circulo--cor {
+    border-radius: 100%;
+    height: 12px;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    width: 12px;
+}
+
+.caixa__circulo--cor:nth-child(1) {
+    background: var(--mac-red);
+}
+
+.caixa__circulo--cor:nth-child(2) {
+    background: var(--mac-yellow);
+}
+
+.caixa__circulo--cor:nth-child(3) {
+    background: var(--mac-green);
+}
+.caixa__texto {
+    flex-grow: 1;
+    border-radius: .5rem;
+    color: var(--white);
+}

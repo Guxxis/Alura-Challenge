@@ -1,0 +1,57 @@
+.card__rodape {
+    display: flex;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--white);
+    font: var(--inter-body);
+    justify-content: space-between;
+}
+.card__rodape p {
+    margin-left: .5rem;
+}
+
+.rodape__status {
+    display: flex;
+}
+.rodape__status a{
+    display: flex;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: var(--white);
+    align-items: center;
+}
+.rodape__status a:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.rodape__status a:active {
+    background: rgba(255,255,255,0.16);
+}
+
+
+.status__curtida--ativo svg path{
+    fill: var(--mac-red);
+}
+.status__comentario, .status__curtida, .rodape__perfil{
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.rodape__perfil a{
+    display: flex;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.rodape__perfil a:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.rodape__perfil img {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
