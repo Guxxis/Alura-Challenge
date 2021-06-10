@@ -1,20 +1,86 @@
 @media screen and (max-width: 768px) {    
     .cabecalho__menu {
-        background: none;
+        width: 42px;
+        height: 42px;
+        border-radius: .5rem;
         display: flex;
-        align-items: center;
-        border-radius: 1rem;
-        height: 48px;
-        justify-content: center;
-        width: 48px;
     }
 
     .cabecalho__menu:hover {
-        background: rgba(var(--blue-300-rgb), 0.08);
-
+        background: rgba(255,255,255, 0.08);
     }
 
     .cabecalho__menu:active {
-        background: rgba(var(--blue-300-rgb), 0.16);
+        background: rgba(255,255,255, 0.16);
     }
+    
+    .menu__hamburguer--toggle {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        width: 42px;
+        height: 42px;
+    }
+    
+    /*Hamburguer Linhas*/
+    .menu__hamburguer {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        top: calc((42px/2) - (17.5px/2));
+        left: calc((42px/2) - (20px/2) );
+        height: 17.5px;
+        width: 20px;
+    }
+    
+    .menu__hamburguer span {
+        position: absolute;
+        display: block;
+        height: 3.5px;
+        width: 100%;
+        border-radius: 30px;
+        background: #fff;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .menu__hamburguer span:nth-child(1) {
+        top: 0;
+    }
+    .menu__hamburguer span:nth-child(2) {
+        top: 7px;
+    }
+    .menu__hamburguer span:nth-child(3) {
+        top: 14px;
+    }
+    /*Hamburguer X*/
+    .menu__hamburguer--toggle:checked + .menu__hamburguer span:nth-child(1) {
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+    .menu__hamburguer--toggle:checked + .menu__hamburguer span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu__hamburguer--toggle:checked + .menu__hamburguer span:nth-child(3) {
+        transform: rotate(135deg);
+        top: 7px;
+    }
+
+    .menu__hamburguer--toggle:checked ~ .menu__responsivo {
+        visibility: visible;
+    } 
+    
+    .menu__responsivo{
+        visibility: hidden;
+        position: fixed;
+        top: 100px;
+        left: calc(100% - 300px);
+        background: black;
+        width: 300px;
+        height: calc(100% - 100px);
+        
+    }
+
+
+
+
 }
