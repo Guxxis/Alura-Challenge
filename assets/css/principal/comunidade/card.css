@@ -1,0 +1,16 @@
+.comunidade__card {
+    max-width: calc(520px - 1.5rem);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.16);
+    border-radius: .5rem;
+    
+}
+
+.comunidade__card:nth-child(odd) {
+    margin-right: 1.5rem;
+}
+.comunidade__card:last-child {
+    margin-left: 0;
+}

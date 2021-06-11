@@ -4,9 +4,9 @@
         display: flex;
         align-items: center;
         border-radius: 1rem;
-        height: 48px;
         justify-content: center;
-        width: 48px;
+        width: 42px;
+        height: 42px;
     }
 
     .cabecalho__lupa:hover {
@@ -15,5 +15,33 @@
 
     .cabecalho__lupa:active {
         background: rgba(var(--blue-300-rgb), 0.16);
+    }
+
+    .busca__responsavel--toggle:checked ~ .buscar__caixa{
+        visibility: visible;
+    }
+
+    .busca__responsavel--toggle:checked ~ .logo__img{
+        display: none;
+    }
+
+    .busca__responsavel--toggle {
+        position: absolute;
+        z-index: 2;
+        height: 42px;
+        width: 42px;
+        opacity: 0;
+    }
+
+    .cabecalho__lupa > .buscar__caixa {
+        visibility: hidden;
+        position: absolute;
+        width: 50%;
+        left: 1rem;
+    }
+
+    .cabecalho__lupa > .logo__img {
+        position: absolute;
+        left: 1rem;
     }
 }

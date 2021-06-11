@@ -1,0 +1,14 @@
+.card__info {
+    padding: 1.5rem;
+}
+
+.info__titulo {
+    font: var(--inter-title);
+    margin-bottom: .5rem;
+    color: var(--white);
+}
+
+.info__discricao {
+    font: var(--inter-body);
+    color: var(--white);
+}

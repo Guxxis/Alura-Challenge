@@ -34,7 +34,7 @@
 .menu__icone {
     align-items: center;
     background: var(--blue-300);
-    border-radius: .5rem;
+    border-radius: 1rem;
     display: flex;
     height: 48px;
     justify-content: center;
