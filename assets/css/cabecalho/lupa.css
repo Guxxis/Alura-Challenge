@@ -20,6 +20,11 @@
     .busca__responsavel--toggle:checked ~ .buscar__caixa{
         visibility: visible;
     }
+
+    .busca__responsavel--toggle:checked ~ .logo__img{
+        display: none;
+    }
+
     .busca__responsavel--toggle {
         position: absolute;
         z-index: 2;
@@ -27,16 +32,16 @@
         width: 42px;
         opacity: 0;
     }
+
     .cabecalho__lupa > .buscar__caixa {
         visibility: hidden;
         position: absolute;
-        
         width: 50%;
         left: 1rem;
     }
 
-    .cabecalho__lupa > img {
-        position: relative;
-        z-index: 1;
+    .cabecalho__lupa > .logo__img {
+        position: absolute;
+        left: 1rem;
     }
 }
