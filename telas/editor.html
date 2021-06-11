@@ -62,8 +62,8 @@
             </div>
 
             <div class="menu__responsivo" for="menu__hamburguer--toggle">
-                <nav class="menu__nav">
-                    <div class="menu__item">
+                <nav class="responsivo__nav">
+                    <div class="responsivo__item">
                         <a href="#" class="menu__link menu__link--ativo">
                             <div class="menu__icone"><img src="../assets/img/icon_code.svg"
                                     alt="Icone representando um codigo">
@@ -71,7 +71,7 @@
                             <p class="menu__texto">Editor de código</p>
                         </a>
                     </div>
-                    <div class="menu__item">
+                    <div class="responsivo__item">
                         <a href="../telas/comunidade.html" class="menu__link">
                             <div class="menu__icone"><img src="../assets/img/icon_users.svg"
                                     alt="Icone representando comunidade"></div>
@@ -79,10 +79,21 @@
                         </a>
                     </div>
                 </nav>
+                <div class="responsivo__perfil">
+                    <a class="perfil__link" href="#">
+                        <img class="perfil__imagem" src="../assets/img/foto.jpg" alt="Foto do Usuario">
+                        <p class="perfil__usuario">Gustavo</p>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="cabecalho__lupa">
+
+            <input type="checkbox" class="busca__responsavel--toggle">
+
+            <input class="buscar__caixa" type="text" name="campoBusca" placeholder="Busque por algo"
+                for="busca__responsavel--toggle">
             <img src="../assets/img/icon_lupa.svg" alt="icone de pesquisa">
         </div>
     </header>

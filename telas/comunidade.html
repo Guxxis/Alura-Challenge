@@ -48,7 +48,38 @@
         </div>
 
         <div class="cabecalho__menu">
-            <img src="../assets/img/icon_menu.svg" alt="icone de menu hamburguer">
+            <input type="checkbox" class="menu__hamburguer--toggle">
+            <div class="menu__hamburguer" for="menu__hamburguer--toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu__responsivo" for="menu__hamburguer--toggle">
+                <nav class="responsivo__nav">
+                    <div class="responsivo__item">
+                        <a href="../telas/editor.html" class="menu__link">
+                            <div class="menu__icone"><img src="../assets/img/icon_code.svg"
+                                    alt="Icone representando um codigo">
+                            </div>
+                            <p class="menu__texto">Editor de código</p>
+                        </a>
+                    </div>
+                    <div class="responsivo__item">
+                        <a href="#" class="menu__link menu__link--ativo">
+                            <div class="menu__icone"><img src="../assets/img/icon_users.svg"
+                                    alt="Icone representando comunidade"></div>
+                            <p class="menu__texto">Comunidade</p>
+                        </a>
+                    </div>
+                </nav>
+                <div class="responsivo__perfil">
+                    <a class="perfil__link" href="#">
+                        <img class="perfil__imagem" src="../assets/img/foto.jpg" alt="Foto do Usuario">
+                        <p class="perfil__usuario">Gustavo</p>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="cabecalho__lupa">
