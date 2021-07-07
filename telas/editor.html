@@ -142,9 +142,9 @@
         <div class="principal__propriedade">
             <div class="proprieade__projeto">
                 <h2 class="projeto__titulo">Seu projeto</h2>
-                <input class="projeto__campo" type="text" name="campoNome" placeholder="Nome do seu projeto">
+                <input class="projeto__campo" type="text" name="campoNome" placeholder="Nome do seu projeto" data-form-nome>
                 <textarea class="projeto__campo" rows="4" name="campoDiscricao"
-                    placeholder="Descricao do seu projeto"></textarea>
+                    placeholder="Descricao do seu projeto" data-form-discricao></textarea>
             </div>
 
             <div class="propriedade__personalizacao">
@@ -162,7 +162,7 @@
             </div>
 
             <div class="personalizacao__botao">
-                <input type="button" value="Salvar projeto" name="botaoSalvarProjeto">
+                <input type="button" value="Salvar projeto" name="botaoSalvarProjeto" data-form-salvar>
             </div>
         </div>
     </main>
@@ -171,5 +171,6 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
 <script src="../js/EditorCor.js"></script>
 <script src="../js/Highlight.js"></script>
+<script src="../js/SalvarProjeto.js"></script>
 
 </html>
