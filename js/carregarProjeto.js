@@ -8,7 +8,7 @@ export const carregarProjeto = () => {
     for(var id in projetos){
 
         const codigo = `<section class="comunidade__card">
-                            <div class="card__codigo">
+                            <div class="card__codigo" style="background:${projetos[id].cor};">
                                 <div class="codigo__caixa">
                                     <div class="caixa__circulo">
                                         <div class="caixa__circulo--cor"></div>
@@ -33,7 +33,7 @@ export const carregarProjeto = () => {
                                         </a>
                                 </div>
                                 <div class="status__curtida">
-                                    <a href="#" class="status__curtida--ativo">
+                                    <a href="#" class="status__curtida">
 
                                         <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ export const carregarProjeto = () => {
 
         const caixaProjeto = document.createElement('section')
 
-        caixaProjeto.appendChild(codigo)
+        caixaProjeto.innerHTML= codigo
 
         areaProjetos.appendChild(caixaProjeto)
     }
